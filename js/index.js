@@ -31,10 +31,6 @@ barChart
         .attr('stroke', '#333')
         .attr('stroke-width', 2);
 
-const my_scale = d3.scaleLinear()
-    .domain([0, 5000])
-    .range([0, 500]);
-
 const barLengthScale = d3.scaleLinear()
     .domain([0, 1000000]) // the number of album equivalent goes up to about 1,000,000
     .range([0, barChartWidth - marginLeft - 100]); // Based on the space that we have on screen and the space we need for the labels
